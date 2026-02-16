@@ -5,20 +5,20 @@
 class Bor < Formula
   desc "CLI issue tracker backed by GitHub Issues"
   homepage "https://github.com/jmaddaus/boxofrocks"
-  version "3.1.0"
+  version "3.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jmaddaus/boxofrocks/releases/download/v3.1.0/bor-darwin-amd64.tar.gz"
-      sha256 "b65192022df60f48ec594d3cb1aedaf738acb5c4064f5c6738d81698c40615db"
+      url "https://github.com/jmaddaus/boxofrocks/releases/download/v3.2.0/bor-darwin-amd64.tar.gz"
+      sha256 "0f74646f5279acdabac3556cb9726c974906fa7a81be286af78800ade6e34922"
 
       def install
         bin.install "bor"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jmaddaus/boxofrocks/releases/download/v3.1.0/bor-darwin-arm64.tar.gz"
-      sha256 "8851a44e8d79076fcc3585673a23674298c32057bdbc23bfdf9d635fab47a428"
+      url "https://github.com/jmaddaus/boxofrocks/releases/download/v3.2.0/bor-darwin-arm64.tar.gz"
+      sha256 "08d348a69dd83370653bd74177c932a60df50a48f8811573b20ec0b2993dab74"
 
       def install
         bin.install "bor"
@@ -28,15 +28,15 @@ class Bor < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jmaddaus/boxofrocks/releases/download/v3.1.0/bor-linux-amd64.tar.gz"
-      sha256 "226acfc9d2fb4d2cb7d0e660d7fdfebc911f40800d820fae12995bc5384147d1"
+      url "https://github.com/jmaddaus/boxofrocks/releases/download/v3.2.0/bor-linux-amd64.tar.gz"
+      sha256 "6a56d6fc49b41ad07b406531269171dfc4818c5f46916af48f105c16f4ceac40"
       def install
         bin.install "bor"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jmaddaus/boxofrocks/releases/download/v3.1.0/bor-linux-arm64.tar.gz"
-      sha256 "d7bd100a25fb742b8d653a450848eb815edbc639fbe03c1dfa0da93f4e9f3e3e"
+      url "https://github.com/jmaddaus/boxofrocks/releases/download/v3.2.0/bor-linux-arm64.tar.gz"
+      sha256 "8d438b5f6ad56b3bbfddcad64c47a3af7466777943923129e3c85148a72ca730"
       def install
         bin.install "bor"
       end
