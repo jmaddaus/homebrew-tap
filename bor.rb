@@ -5,20 +5,20 @@
 class Bor < Formula
   desc "CLI issue tracker backed by GitHub Issues"
   homepage "https://github.com/jmaddaus/boxofrocks"
-  version "3.2.0"
+  version "3.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jmaddaus/boxofrocks/releases/download/v3.2.0/bor-darwin-amd64.tar.gz"
-      sha256 "0f74646f5279acdabac3556cb9726c974906fa7a81be286af78800ade6e34922"
+      url "https://github.com/jmaddaus/boxofrocks/releases/download/v3.3.0/bor-darwin-amd64.tar.gz"
+      sha256 "96b0cff2e31ef7651cb7e21c1352efd4efb15c77f3fd89e19d2e57559bbb793c"
 
       def install
         bin.install "bor"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jmaddaus/boxofrocks/releases/download/v3.2.0/bor-darwin-arm64.tar.gz"
-      sha256 "08d348a69dd83370653bd74177c932a60df50a48f8811573b20ec0b2993dab74"
+      url "https://github.com/jmaddaus/boxofrocks/releases/download/v3.3.0/bor-darwin-arm64.tar.gz"
+      sha256 "b2d568b40e3f3dbfeaf0bace1861bd998bd983af1c0946f4ab1eaaf068781ce5"
 
       def install
         bin.install "bor"
@@ -28,15 +28,15 @@ class Bor < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jmaddaus/boxofrocks/releases/download/v3.2.0/bor-linux-amd64.tar.gz"
-      sha256 "6a56d6fc49b41ad07b406531269171dfc4818c5f46916af48f105c16f4ceac40"
+      url "https://github.com/jmaddaus/boxofrocks/releases/download/v3.3.0/bor-linux-amd64.tar.gz"
+      sha256 "00ee6b2d20f74a5b477043cbda6b67fd15401bb7968ed99080c2c9e81aac7648"
       def install
         bin.install "bor"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jmaddaus/boxofrocks/releases/download/v3.2.0/bor-linux-arm64.tar.gz"
-      sha256 "8d438b5f6ad56b3bbfddcad64c47a3af7466777943923129e3c85148a72ca730"
+      url "https://github.com/jmaddaus/boxofrocks/releases/download/v3.3.0/bor-linux-arm64.tar.gz"
+      sha256 "7510b97e3b5ae7112d361da93fbf2c4da0d17ae7252c6835d549e0a740c7b75f"
       def install
         bin.install "bor"
       end
