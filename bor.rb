@@ -5,20 +5,20 @@
 class Bor < Formula
   desc "CLI issue tracker backed by GitHub Issues"
   homepage "https://github.com/jmaddaus/boxofrocks"
-  version "3.3.0"
+  version "3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jmaddaus/boxofrocks/releases/download/v3.3.0/bor-darwin-amd64.tar.gz"
-      sha256 "96b0cff2e31ef7651cb7e21c1352efd4efb15c77f3fd89e19d2e57559bbb793c"
+      url "https://github.com/jmaddaus/boxofrocks/releases/download/v3/bor-darwin-amd64.tar.gz"
+      sha256 "cd615080091d74207f7fd8619907ede667bfdcd40b5a66f30ff862cfefa4ef26"
 
       def install
         bin.install "bor"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jmaddaus/boxofrocks/releases/download/v3.3.0/bor-darwin-arm64.tar.gz"
-      sha256 "b2d568b40e3f3dbfeaf0bace1861bd998bd983af1c0946f4ab1eaaf068781ce5"
+      url "https://github.com/jmaddaus/boxofrocks/releases/download/v3/bor-darwin-arm64.tar.gz"
+      sha256 "0e0b724a80712d7613aa41f2ff383f14ea241096e3ccb84ee2cec5eacc4b1a8d"
 
       def install
         bin.install "bor"
@@ -28,15 +28,15 @@ class Bor < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jmaddaus/boxofrocks/releases/download/v3.3.0/bor-linux-amd64.tar.gz"
-      sha256 "00ee6b2d20f74a5b477043cbda6b67fd15401bb7968ed99080c2c9e81aac7648"
+      url "https://github.com/jmaddaus/boxofrocks/releases/download/v3/bor-linux-amd64.tar.gz"
+      sha256 "e52b837e5142031bf16ba62ecee1c753cdb396d1176440ee13870053aeb96fb3"
       def install
         bin.install "bor"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jmaddaus/boxofrocks/releases/download/v3.3.0/bor-linux-arm64.tar.gz"
-      sha256 "7510b97e3b5ae7112d361da93fbf2c4da0d17ae7252c6835d549e0a740c7b75f"
+      url "https://github.com/jmaddaus/boxofrocks/releases/download/v3/bor-linux-arm64.tar.gz"
+      sha256 "82100f8c433429c40d350d87fa3f9ed8d49f7e7518f991481c1594371f3074af"
       def install
         bin.install "bor"
       end
